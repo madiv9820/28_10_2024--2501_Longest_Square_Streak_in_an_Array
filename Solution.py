@@ -5,6 +5,9 @@ class Solution:
         # Initialize the longest streak to -1 (indicating no streak found yet)
         longest_Streak = -1
         
+        # Create a set for quick lookup of numbers in the list
+        is_num_Present = {num: True for num in nums}
+        
         # Sort the list of numbers
         nums.sort()
 
@@ -13,8 +16,8 @@ class Solution:
             current_Element = nums[index]  # Current number to check for square streak
             current_Streak = -1  # Initialize current streak for this element
             
-            # Continue while the square of the current element is in the list
-            while current_Element ** 2 in nums:
+            # Continue while the square of the current element is present in the set
+            while current_Element ** 2 in is_num_Present.keys():
                 # If this is the first square found, start the streak at 2
                 if current_Streak == -1:
                     current_Streak = 2  # Streak of at least 2 (the number and its square)

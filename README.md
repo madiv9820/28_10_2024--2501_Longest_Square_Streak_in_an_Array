@@ -23,7 +23,7 @@
         - The primary space usage comes from storing the sorted list, leading to a space complexity of __O(n)__. Additionally, the auxiliary space for variables remains constant, __O(1)__.
 
     - ### Code
-        ``` python3[]
+        ``` python3 []
         class Solution:
             def longestSquareStreak(self, nums: List[int]) -> int:
                 # Initialize the longest streak to -1 (indicating no streak found yet)

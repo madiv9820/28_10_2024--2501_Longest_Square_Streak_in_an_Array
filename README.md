@@ -273,7 +273,7 @@
 - ## Using Dictionary/Maps
 
     - ### Intuition
-        - The goal is to find the longest sequence of numbers in the list where each number is a perfect square of its predecessor. For example, if a number is `4`, the previous number in the sequence could be `2`, since \(2^2 = 4\). We aim to identify these relationships and count the lengths of the resulting sequences, ultimately returning the length of the longest sequence found.
+        - The goal is to find the longest sequence of numbers in the list where each number is a perfect square of its predecessor. For example, if a number is `4`, the previous number in the sequence could be `2`, since (2<sup>2</sup> = 4). We aim to identify these relationships and count the lengths of the resulting sequences, ultimately returning the length of the longest sequence found.
 
     - ### Approach
         1. **Initialization**:
